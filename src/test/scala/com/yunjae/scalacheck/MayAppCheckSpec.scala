@@ -12,6 +12,8 @@ class MayAppCheckSpec extends Properties("String") {
       actual == expected
   }
 
+
+
   property("multiply(Int, Int) should add both Int values and result the result") =
     forAll(Gen.choose(1, 100), Gen.choose(1, 10)) { (x: Int, y: Int) =>
       println(s"[1] x: $x , y: $y")
